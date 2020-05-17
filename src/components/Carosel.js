@@ -18,7 +18,7 @@ function Carosel(props) {
                             <div className="carousel-caption">
                                 <h3>Fruits</h3>
                             <p>Fruits delivered directly from farmers!</p>
-                          <button type="submit" className="btn btn-cust" onClick={(e)=>props.buy(e)} >Buy With us</button>
+                          <button type="submit" className="btn btn-cust" onClick={()=>props.buy("products")} >Buy With us</button>
 
                             
                             </div>
@@ -29,7 +29,7 @@ function Carosel(props) {
                             <div className="carousel-caption">
                             <h3>Vegetables</h3>
                             <p>Fresh from the farm and Hygenic!</p>
-                          <button type="submit" className="btn btn-cust" onClick={(e)=>props.buy(e)} >Buy With us</button>
+                          <button type="submit" className="btn btn-cust" onClick={()=>props.buy("products")} >Buy With us</button>
                             </div>
                         </div>
             

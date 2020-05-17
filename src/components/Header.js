@@ -8,23 +8,23 @@ const Header = (props) => {
           <a className="navbar-brand" href="/Agricart-online-vegetable-shopping-reactjs">{props.title}</a>
         </div>
         <ul className="nav navbar-nav navbar-right">
-          <li className="active"><a onClick={(e)=>props.buy(e)}> <i className="glyphicon glyphicon-search icon"></i>Products</a></li>
-          <li ><a href="/Agricart-online-vegetable-shopping-reactjs/offers"><i className="fa fa-percent icon"></i>Offers</a></li>
-          <li><a href="/Agricart-online-vegetable-shopping-reactjs/help"><i className="fa fa-life-ring icon"></i> Help</a></li>
+          <li className="active"><a onClick={()=>props.buy("products")}> <i className="glyphicon glyphicon-search icon"></i>Products</a></li>
+          <li ><a onClick={()=>props.buy("offers")}><i className="fa fa-percent icon"></i>Offers</a></li>
+          <li><a onClick={()=>props.buy("help")}><i className="fa fa-life-ring icon"></i> Help</a></li>
           
           {props.user.userId!=null?(<li className="dropdown">
             <a href="#" className="dropdown-toggle" data-toggle="dropdown"><span className="glyphicon glyphicon-user icon"></span>{props.user.email!==null? props.user.email:"Hello, Sign in"}</a>
             <ul className="dropdown-menu">
               <li align="center" className="well">
-              {props.user.email===null?(<a href="/Agricart-online-vegetable-shopping-reactjs/signin"><span className="glyphicon glyphicon-user icon"></span>Sign In</a>):''}
-                  <a href="/Agricart-online-vegetable-shopping-reactjs/profile" > Profile</a>
-                  <a href="/Agricart-online-vegetable-shopping-reactjs/orders" > Orders</a>
-                  <a href="/Agricart-online-vegetable-shopping-reactjs/favourites" > Favourites</a>
+              {props.user.email===null?(<a onClick={()=>props.buy("signin")}><span className="glyphicon glyphicon-user icon"></span>Sign In</a>):''}
+                  <a onClick={()=>props.buy("profile")} > Profile</a>
+                  <a onClick={()=>props.buy("orders")} > Orders</a>
+                  <a onClick={()=>props.buy("favourites")} > Favourites</a>
                   {props.user.email!==null?(<a onClick={props.logout} ><span className="glyphicon glyphicon-log-out"></span> Logout</a>):''}
               </li>
               </ul>
             </li>):''}
-          <li><a href="/Agricart-online-vegetable-shopping-reactjs/checkout"><i className="fa fa-cart-plus icon"></i>Cart <span>{props.count.length}</span> </a></li>
+          <li><a onClick={()=>props.buy("checkout")}><i className="fa fa-cart-plus icon"></i>Cart <span>{props.count.length}</span> </a></li>
         </ul>
       </div>
     </nav>

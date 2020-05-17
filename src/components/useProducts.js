@@ -187,8 +187,8 @@ return{
       cnfPwdLoginChange:(value) => {
           setCnfPwd_Login(value)
       },
-      buy:(e) => {
-          History.push('/Agricart-online-vegetable-shopping-reactjs/products');
+      buy:(value) => {
+          History.push('/Agricart-online-vegetable-shopping-reactjs/'+value);
       },
 
       login: (e)=>{

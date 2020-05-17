@@ -22,7 +22,7 @@ function App() {
   return (
     <Fragment>
       <Router history = {History} >
-        <Header title="AGRI-Cart" count={cartItems} user={user} logout={logout} buy={buy}/>
+       <Header title="AGRI-Cart" count={cartItems} user={user} logout={logout} buy={buy}/>
           <Switch>
             <Route path="/Agricart-online-vegetable-shopping-reactjs" exact render={()=> < Homepage buy={buy}/>} />
             <Route path="/Agricart-online-vegetable-shopping-reactjs/signup" render={()=> < Signup userLoginChange={userLoginChange} pwdLoginChange={pwdLoginChange} cnfPwdLoginChange={cnfPwdLoginChange} signUp = {signUp}/>} />

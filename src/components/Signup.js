@@ -31,7 +31,7 @@ const Signup = (props) => {
             <label className="pull-left checkbox-inline"><input type="checkbox"/> Remember me</label>
             <a href="#" className="pull-right">Forgot Password?</a> 
         </div>         */}
-    <p className="text-center">Already a Member? <a href="/Agricart-online-vegetable-shopping-reactjs/signin">Sign in</a></p>
+    <p className="text-center">Already a Member? <a onClick={()=>props.buy("signin")}>Sign in</a></p>
     </form>
 </div>
 
