@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Agricart-online-vegetable-shopping-reactjs/static/css/main.89c165c6.chunk.css",
-    "main.js": "/Agricart-online-vegetable-shopping-reactjs/static/js/main.f42313ed.chunk.js",
-    "main.js.map": "/Agricart-online-vegetable-shopping-reactjs/static/js/main.f42313ed.chunk.js.map",
+    "main.js": "/Agricart-online-vegetable-shopping-reactjs/static/js/main.dce7c887.chunk.js",
+    "main.js.map": "/Agricart-online-vegetable-shopping-reactjs/static/js/main.dce7c887.chunk.js.map",
     "runtime-main.js": "/Agricart-online-vegetable-shopping-reactjs/static/js/runtime-main.6c4047ee.js",
     "runtime-main.js.map": "/Agricart-online-vegetable-shopping-reactjs/static/js/runtime-main.6c4047ee.js.map",
     "static/js/2.037ad77c.chunk.js": "/Agricart-online-vegetable-shopping-reactjs/static/js/2.037ad77c.chunk.js",
     "static/js/2.037ad77c.chunk.js.map": "/Agricart-online-vegetable-shopping-reactjs/static/js/2.037ad77c.chunk.js.map",
     "index.html": "/Agricart-online-vegetable-shopping-reactjs/index.html",
-    "precache-manifest.60bfeae96b2220b3d24c34a8636727ff.js": "/Agricart-online-vegetable-shopping-reactjs/precache-manifest.60bfeae96b2220b3d24c34a8636727ff.js",
+    "precache-manifest.e60a094603a878aae0fac706cf9f2ea5.js": "/Agricart-online-vegetable-shopping-reactjs/precache-manifest.e60a094603a878aae0fac706cf9f2ea5.js",
     "service-worker.js": "/Agricart-online-vegetable-shopping-reactjs/service-worker.js",
     "static/css/main.89c165c6.chunk.css.map": "/Agricart-online-vegetable-shopping-reactjs/static/css/main.89c165c6.chunk.css.map",
     "static/js/2.037ad77c.chunk.js.LICENSE.txt": "/Agricart-online-vegetable-shopping-reactjs/static/js/2.037ad77c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.6c4047ee.js",
     "static/js/2.037ad77c.chunk.js",
     "static/css/main.89c165c6.chunk.css",
-    "static/js/main.f42313ed.chunk.js"
+    "static/js/main.dce7c887.chunk.js"
   ]
 }
