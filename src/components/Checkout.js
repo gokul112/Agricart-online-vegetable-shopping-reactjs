@@ -14,7 +14,7 @@ function Checkout(props) {
         <div className="container-fluid checkout-container">
              <div className="row">
                     <div className="col-md-8 col-sm-12 well address-container">
-                        <img src="../truck.gif" alt="truck" className="truck"/> 
+                        <img src="/Agricart-online-vegetable-shopping-reactjs/truck.gif" alt="truck" className="truck"/> 
                     </div>
                    
                     <div className="col-md-4 sticky basket">
