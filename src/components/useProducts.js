@@ -267,8 +267,8 @@ return{
             setCartItems([])
         },
         user:user,
-        transcationSuccess:(data) => {
-             db.collection('Orders/').doc(user.userId).set({cartItems:cartItems,paymentDetails:data})
+        transcationSuccess:(data,cartItem) => {
+             db.collection('Orders/').doc(user.userId).set({cartItems:cartItem,paymentDetails:data})
              .then(function() {
                  db.collection('User/').doc(user.userId).set({cartItems:[]})
                  setCartItems([]);
