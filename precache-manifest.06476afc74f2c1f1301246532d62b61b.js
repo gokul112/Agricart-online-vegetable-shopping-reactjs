@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2355bcf24788ba4da2b52e2d23951cd2",
+    "revision": "34ae63b19d310986b6c81a2c65649b59",
     "url": "/Agricart-online-vegetable-shopping-reactjs/index.html"
   },
   {
-    "revision": "3470e74a9113f3719f1f",
+    "revision": "4c8c81bd6210f64f93f2",
     "url": "/Agricart-online-vegetable-shopping-reactjs/static/css/main.89c165c6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Agricart-online-vegetable-shopping-reactjs/static/js/2.037ad77c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3470e74a9113f3719f1f",
-    "url": "/Agricart-online-vegetable-shopping-reactjs/static/js/main.077d776d.chunk.js"
+    "revision": "4c8c81bd6210f64f93f2",
+    "url": "/Agricart-online-vegetable-shopping-reactjs/static/js/main.d04e7014.chunk.js"
   },
   {
     "revision": "38804e9b75dc848b1c88",
