@@ -24,15 +24,15 @@ function App() {
       <Router history = {History} >
         <Header title="AGRI-Cart" count={cartItems} user={user} logout={logout}/>
           <Switch>
-            <Route path="/" exact render={()=> < Homepage buy={buy}/>} />
-            <Route path="/signup" render={()=> < Signup userLoginChange={userLoginChange} pwdLoginChange={pwdLoginChange} cnfPwdLoginChange={cnfPwdLoginChange} signUp = {signUp}/>} />
-            <Route path="/signin" render={()=> <Signin userLoginChange={userLoginChange} pwdLoginChange={pwdLoginChange} login={login}/>} />
-            <Route path="/products" render={()=><Products products={filteredProducts} cartItems={cartItems} onAddCart={onAddCart} onRemoveCart={onRemoveCart} handleChangeSort={handleChangeSort} handleSearch={handleSearch} search={search} onCheckout={onCheckout}/>} />
-            <Route path="/help" render={()=> <Help/>} />
-            <Route path="/offers" render={()=> <Offers/>} />
-            <Route path="/checkout" render={()=> <Checkout cartItems={cartItems} onAddCart={onAddCart} onRemoveCart={onRemoveCart}/>}/>
-            <Route path="/orderConfirmation" render={() => <OrderConfirmation/>}/>
-            <Route Path="/orders" render={()=> <Orders orders={orders}/>}/>
+            <Route path="/Agricart-online-vegetable-shopping-reactjs" exact render={()=> < Homepage buy={buy}/>} />
+            <Route path="/Agricart-online-vegetable-shopping-reactjs/signup" render={()=> < Signup userLoginChange={userLoginChange} pwdLoginChange={pwdLoginChange} cnfPwdLoginChange={cnfPwdLoginChange} signUp = {signUp}/>} />
+            <Route path="/Agricart-online-vegetable-shopping-reactjs/signin" render={()=> <Signin userLoginChange={userLoginChange} pwdLoginChange={pwdLoginChange} login={login}/>} />
+            <Route path="/Agricart-online-vegetable-shopping-reactjs/products" render={()=><Products products={filteredProducts} cartItems={cartItems} onAddCart={onAddCart} onRemoveCart={onRemoveCart} handleChangeSort={handleChangeSort} handleSearch={handleSearch} search={search} onCheckout={onCheckout}/>} />
+            <Route path="/Agricart-online-vegetable-shopping-reactjs/help" render={()=> <Help/>} />
+            <Route path="/Agricart-online-vegetable-shopping-reactjs/offers" render={()=> <Offers/>} />
+            <Route path="/Agricart-online-vegetable-shopping-reactjs/checkout" render={()=> <Checkout cartItems={cartItems} onAddCart={onAddCart} onRemoveCart={onRemoveCart}/>}/>
+            <Route path="/Agricart-online-vegetable-shopping-reactjs/orderConfirmation" render={() => <OrderConfirmation/>}/>
+            <Route Path="/Agricart-online-vegetable-shopping-reactjs/orders" render={()=> <Orders orders={orders}/>}/>
           </Switch>
             
         <Footer/>

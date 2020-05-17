@@ -188,7 +188,7 @@ return{
           setCnfPwd_Login(value)
       },
       buy:(e) => {
-          History.push('/products');
+          History.push('/Agricart-online-vegetable-shopping-reactjs/products');
       },
 
       login: (e)=>{
@@ -218,7 +218,7 @@ return{
                                             update.push(val)
                                         })
                             db.collection('User/').doc(res.user.uid).set({cartItems:update});
-                            History.push('/');
+                            History.push('/Agricart-online-vegetable-shopping-reactjs');
                                 }
                             } 
                         
@@ -242,7 +242,7 @@ return{
                 if(user.email!==null){
                     fire.auth().createUserWithEmailAndPassword(usrLogin,pwdLogin).then((res)=>{
                     if(res){
-                        History.push('/products')
+                        History.push('/Agricart-online-vegetable-shopping-reactjs/products')
                     }
                     })
                     .catch((err)=>{
@@ -253,7 +253,7 @@ return{
                 {
                 const cred = Firebase.auth.EmailAuthProvider.credential(usrLogin,pwdLogin)
                 Firebase.auth().currentUser.linkWithCredential(cred);
-                History.push('/products')
+                History.push('/Agricart-online-vegetable-shopping-reactjs/products')
                 setUser({...user,email:usrLogin})
                 }
             }
@@ -272,7 +272,7 @@ return{
              .then(function() {
                  db.collection('User/').doc(user.userId).set({cartItems:[]})
                  setCartItems([]);
-                History.push("/orderConfirmation");
+                History.push("/Agricart-online-vegetable-shopping-reactjs/orderConfirmation");
             }).catch(function(error) {
                 console.log("Error writing document: ", error);
             })
@@ -284,7 +284,7 @@ return{
             console.log("transaction cancelled")
         },
         onCheckout:(e) => {
-            History.push("/checkout");
+            History.push("/Agricart-online-vegetable-shopping-reactjs/checkout");
         }
 
 
