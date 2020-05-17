@@ -8,7 +8,7 @@ const Header = (props) => {
           <a className="navbar-brand" href="/Agricart-online-vegetable-shopping-reactjs">{props.title}</a>
         </div>
         <ul className="nav navbar-nav navbar-right">
-          <li className="active"><a href="/Agricart-online-vegetable-shopping-reactjs/products"> <i className="glyphicon glyphicon-search icon"></i>Products</a></li>
+          <li className="active"><a onClick={(e)=>props.buy(e)}> <i className="glyphicon glyphicon-search icon"></i>Products</a></li>
           <li ><a href="/Agricart-online-vegetable-shopping-reactjs/offers"><i className="fa fa-percent icon"></i>Offers</a></li>
           <li><a href="/Agricart-online-vegetable-shopping-reactjs/help"><i className="fa fa-life-ring icon"></i> Help</a></li>
           
