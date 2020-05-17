@@ -18,7 +18,7 @@ export default () => {
   const [user,setUser] = useState({});
   const [orders,setOrders] = useState([]);
   const [env] = useState('sandbox');
-  const [currency] = useState('INR');
+  const [currency] = useState('USD');
   const [client] = useState({
         sandbox:    'ATKphVPUKrAFnWXr042hYQsynmg9U_UUeudlf1RjYkyKf3rsf5s3IE-H1QZWn8ziKEZzq5WH4TRalZR_',
         production: 'YOUR-PRODUCTION-APP-ID',
