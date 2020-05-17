@@ -18,7 +18,7 @@ export default () => {
   const [user,setUser] = useState({});
   const [orders,setOrders] = useState([]);
   const [env] = useState('sandbox');
-  const [currency] = useState('USD');
+  const [currency] = useState('INR');
   const [client] = useState({
         sandbox:    'ATKphVPUKrAFnWXr042hYQsynmg9U_UUeudlf1RjYkyKf3rsf5s3IE-H1QZWn8ziKEZzq5WH4TRalZR_',
         production: 'YOUR-PRODUCTION-APP-ID',
@@ -269,13 +269,9 @@ return{
         user:user,
         transcationSuccess:(data,cartItem) => {
              db.collection('Orders/').doc(user.userId).set({cartItems:cartItem,paymentDetails:data})
-             .then(function() {
-                 db.collection('User/').doc(user.userId).set({cartItems:[]})
-                 setCartItems([]);
-                History.push("/Agricart-online-vegetable-shopping-reactjs/orderConfirmation");
-            }).catch(function(error) {
-                console.log("Error writing document: ", error);
-            })
+             db.collection('User/').doc(user.userId).set({cartItems:[]})
+             setCartItems([]);
+             History.push("/Agricart-online-vegetable-shopping-reactjs/orderConfirmation");
         },
         transcationError:() => {
             console.log("transaction failed");
