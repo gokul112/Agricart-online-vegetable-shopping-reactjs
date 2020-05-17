@@ -39,7 +39,7 @@ function Paypal(props){
  
         // NB. You can also have many Paypal express checkout buttons on page, just pass in the correct amount and they will work!
         return (
-            <PaypalExpressBtn env={props.env} client={props.client} currency={props.currency} total={parseFloat(props.toPay.toFixed(1))} onError={props.transcationError} onSuccess={(payment)=>props.onSuccess(payment)} onCancel={props.transcationCancelled} 
+            <PaypalExpressBtn env={props.env} client={props.client} currency={props.currency} total={parseFloat(props.toPay.toFixed(1))} onError={props.transcationError} onSuccess={(payment)=>props.onSuccess(payment,props.cartItems)} onCancel={props.transcationCancelled} 
             style={{
                 size:'large',
                 color:'blue',

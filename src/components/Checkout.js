@@ -45,7 +45,7 @@ function Checkout(props) {
                     </div>
                         </div>
                         <div className="checkout-payment">
-                       <Paypal env={env} currency={currency} client={client} toPay={props.cartItems.reduce((a,c) => a + c.price * c.count,0) + props.cartItems.reduce((a,c) => a + c.price * c.count,0)* 0.18} onSuccess={transcationSuccess} transcationError={transcationError} transcationCancelled={transcationCancelled}/>
+                       <Paypal env={env} currency={currency} client={client} toPay={props.cartItems.reduce((a,c) => a + c.price * c.count,0) + props.cartItems.reduce((a,c) => a + c.price * c.count,0)* 0.18} onSuccess={transcationSuccess} transcationError={transcationError} transcationCancelled={transcationCancelled} cartItems={props.cartItems}/>
                     </div>
                     </div>:""}
                    </div>

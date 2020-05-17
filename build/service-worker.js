@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Agricart-online-vegetable-shopping-reactjs/precache-manifest.f8dfdcabf61106b8c40e41863dd39804.js"
+  "/Agricart-online-vegetable-shopping-reactjs/precache-manifest.9b0a8b035bbb3b996cdda1072f738aab.js"
 );
 
 self.addEventListener('message', (event) => {
