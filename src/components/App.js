@@ -25,8 +25,8 @@ function App() {
        <Header title="AGRI-Cart" count={cartItems} user={user} logout={logout} buy={buy}/>
           <Switch>
             <Route path="/Agricart-online-vegetable-shopping-reactjs" exact render={()=> < Homepage buy={buy}/>} />
-            <Route path="/Agricart-online-vegetable-shopping-reactjs/signup" render={()=> < Signup userLoginChange={userLoginChange} pwdLoginChange={pwdLoginChange} cnfPwdLoginChange={cnfPwdLoginChange} signUp = {signUp}/>} />
-            <Route path="/Agricart-online-vegetable-shopping-reactjs/signin" render={()=> <Signin userLoginChange={userLoginChange} pwdLoginChange={pwdLoginChange} login={login}/>} />
+            <Route path="/Agricart-online-vegetable-shopping-reactjs/signup" render={()=> < Signup userLoginChange={userLoginChange} pwdLoginChange={pwdLoginChange} cnfPwdLoginChange={cnfPwdLoginChange} signUp = {signUp} buy={buy}/>} />
+            <Route path="/Agricart-online-vegetable-shopping-reactjs/signin" render={()=> <Signin userLoginChange={userLoginChange} pwdLoginChange={pwdLoginChange} login={login} buy={buy}/>} />
             <Route path="/Agricart-online-vegetable-shopping-reactjs/products" render={()=><Products products={filteredProducts} cartItems={cartItems} onAddCart={onAddCart} onRemoveCart={onRemoveCart} handleChangeSort={handleChangeSort} handleSearch={handleSearch} search={search} onCheckout={onCheckout}/>} />
             <Route path="/Agricart-online-vegetable-shopping-reactjs/help" render={()=> <Help/>} />
             <Route path="/Agricart-online-vegetable-shopping-reactjs/offers" render={()=> <Offers/>} />
