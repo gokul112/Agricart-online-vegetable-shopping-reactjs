@@ -5,7 +5,7 @@ const Header = (props) => {
     <nav className="navbar">
       <div className="container-fluid">
         <div className="navbar-header">
-          <a className="navbar-brand" href="/">{props.title}</a>
+          <a className="navbar-brand" href="/Agricart-online-vegetable-shopping-reactjs">{props.title}</a>
         </div>
         <ul className="nav navbar-nav navbar-right">
           <li className="active"><a href="/Agricart-online-vegetable-shopping-reactjs/products"> <i className="glyphicon glyphicon-search icon"></i>Products</a></li>
@@ -24,7 +24,7 @@ const Header = (props) => {
               </li>
               </ul>
             </li>):''}
-          <li><a href="/checkout"><i className="fa fa-cart-plus icon"></i>Cart <span>{props.count.length}</span> </a></li>
+          <li><a href="/Agricart-online-vegetable-shopping-reactjs/checkout"><i className="fa fa-cart-plus icon"></i>Cart <span>{props.count.length}</span> </a></li>
         </ul>
       </div>
     </nav>

@@ -24,7 +24,7 @@ function App() {
       <Router history = {History} >
         <Header title="AGRI-Cart" count={cartItems} user={user} logout={logout}/>
           <Switch>
-            <Route path="/" exact render={()=> < Homepage buy={buy}/>} />
+            <Route path="/Agricart-online-vegetable-shopping-reactjs" exact render={()=> < Homepage buy={buy}/>} />
             <Route path="/Agricart-online-vegetable-shopping-reactjs/signup" render={()=> < Signup userLoginChange={userLoginChange} pwdLoginChange={pwdLoginChange} cnfPwdLoginChange={cnfPwdLoginChange} signUp = {signUp}/>} />
             <Route path="/Agricart-online-vegetable-shopping-reactjs/signin" render={()=> <Signin userLoginChange={userLoginChange} pwdLoginChange={pwdLoginChange} login={login}/>} />
             <Route path="/Agricart-online-vegetable-shopping-reactjs/products" render={()=><Products products={filteredProducts} cartItems={cartItems} onAddCart={onAddCart} onRemoveCart={onRemoveCart} handleChangeSort={handleChangeSort} handleSearch={handleSearch} search={search} onCheckout={onCheckout}/>} />
