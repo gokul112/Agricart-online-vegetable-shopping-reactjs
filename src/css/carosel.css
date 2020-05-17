@@ -1,0 +1,31 @@
+.carousel-bg{
+    background-image:url('https://firebasestorage.googleapis.com/v0/b/agricart-c7914.appspot.com/o/banners%2Fslider1-min.jpg?alt=media&token=a20124fe-b85e-43b0-890c-4d6711874bb3');
+    width:100%;
+
+}
+.carousel-caption {
+    position: initial;
+  }
+  .carousel-control.left, .carousel-control.right {
+    background: transparent;
+  }
+
+  .item h3,
+.item p {
+  color: black;
+}
+
+.item h3 {
+  margin-top: 150px;
+  font-size: 45px;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.item p {
+  font-size: 25px;
+  text-align: center;
+}
+

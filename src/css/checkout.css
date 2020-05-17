@@ -1,0 +1,50 @@
+.checkout-container{
+    padding: 100px;
+    background:#e9ecee;
+    min-height:100%;
+}
+.checkout-cart{
+    width: 100%;
+    background-color: #e9ecee; 
+    height: 80%;
+    padding: 0px 30px;
+}
+.tab-payment{
+    padding: 15px;
+
+}
+
+.checkout-payment{
+    padding:50px;
+}
+.address-container,.payment-container{
+    background: #ffffff;
+}
+.payment-table{
+    background: #ffffff;
+    clear: both;
+    margin-bottom: 1.8em;
+    width: 100%;
+    padding-bottom: 20px;
+    max-height: 250px;
+    overflow-y:auto;
+    overflow-x:hidden; 
+}
+
+.bill-details{
+    padding-left: 50px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.to-pay{
+        border: 1px solid black;
+}
+.total-bill{
+    padding-left: 35px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.truck{
+    width:100%;
+    height: 500px;
+}

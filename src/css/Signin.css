@@ -1,0 +1,29 @@
+.login-form {
+    width: 500px;
+    margin: 60px auto;
+}
+.login-form form {
+    margin-bottom: 100px;
+    padding: 30px;
+}
+.login-form h2 {
+    margin: 0 0 40px;
+}
+.form-control, .btn {
+    min-height: 45px;
+    border-radius: 2px;
+}
+.btn-cust {        
+    font-size: 15px;
+    font-weight: bold;
+    background-color:#60b246;
+}
+.heading {
+    height: 80px;
+    line-height: 80px;
+    margin: 60px auto;
+    font-weight: 500;
+    font-size: 32px;
+    color:#60b246;
+  }
+  

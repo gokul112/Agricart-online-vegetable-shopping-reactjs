@@ -1,0 +1,70 @@
+.product{
+    height: 100%;
+    padding-bottom: 100px;
+}
+.car{
+  padding-top:10px;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+ .card-product .img-wrap {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    position: relative;
+    height: 160px;
+    text-align: center;
+}
+.card-product .img-wrap img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.card-product .info-wrap {
+    overflow: hidden;
+    padding: 15px;
+    border-top: 1px solid #3D4052;
+}
+.card-product .bottom-wrap {
+    padding: 15px;
+    border-top: 1px solid #3D4052;
+}
+
+.label-rating { margin-right:10px;
+    color: #3D4052;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cart{
+    height: 30px;
+    background-color: #60b246;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    }
+
+
+.cart:hover{
+    background-color: white;
+    color: #5FB709;
+    border-color: #5FB709;
+}
+
+
+.img-loaded{
+   animation: fadeInImg cubic-bezier(0.23, 1, 0.32, 1) 1;
+   position: relative;
+   opacity: 0;
+   animation-fill-mode: forwards;
+   animation-duration: 0.7s;
+   animation-delay: 0.1s;
+}

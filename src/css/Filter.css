@@ -1,0 +1,61 @@
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+.searchFilter{
+    background-color: #171a29;
+    padding: 35px;
+    font-size: 20px;
+}
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 12px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+
+/* add padding  */
+.left-addon input  { 
+    padding-left:  40px; 
+    vertical-align: middle;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    font-weight: 600;
+    top: -1px;
+    caret-color: #5FB709;
+    color: #3D4052;
+}
+
+.text{
+    font-weight: 600;
+    color: #3D4052;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.select{
+    vertical-align: middle;
+    width: 100%;
+    height: 45px;
+    line-height: 22px;
+    font-weight: 600;
+    top: -1px;
+    color: #3D4052;
+}
+
+
+.form-control::-webkit-input-placeholder { color: #3D4052; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: #3D4052; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: #3D4052; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: #3D4052; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: #3D4052; }  /* Microsoft Edge */
