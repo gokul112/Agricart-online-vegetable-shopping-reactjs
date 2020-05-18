@@ -269,9 +269,13 @@ return{
         user:user,
         transcationSuccess:(data,cartItem) => {
              db.collection('Orders/').doc(user.userId).set({cartItems:cartItem,paymentDetails:data})
-             db.collection('User/').doc(user.userId).set({cartItems:[]})
-             setCartItems([]);
-             History.push("/Agricart-online-vegetable-shopping-reactjs/orderConfirmation");
+             .then(function() {
+                 db.collection('User/').doc(user.userId).set({cartItems:[]})
+                 setCartItems([]);
+                History.push("/Agricart-online-vegetable-shopping-reactjs/orderConfirmation");
+            }).catch(function(error) {
+                console.log("Error writing document: ", error);
+            })
         },
         transcationError:() => {
             console.log("transaction failed");
